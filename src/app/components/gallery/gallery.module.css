@@ -1,0 +1,54 @@
+.galleryContainer {
+  width: 100%;
+  /* height: 100vh; */
+  margin-bottom: 150px;
+  margin-top: 70px;
+  display: flex; /* Cambia de grid a flex */
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.galleryItemsContainer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  grid-auto-rows: 400px; /* Altura de las filas */
+  gap: 10px; /* Espacio entre imágenes */
+  margin: 20px;
+}
+
+.item {
+  position: relative; /* Necesario para Image con fill */
+  overflow: hidden; /* Asegura que la imagen no desborde */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.titleContainer {
+  width: 80%;
+  text-align: left;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+.rectangle {
+  width: 100%;
+  height: 3px;
+  background-color: #db2955;
+}
+
+.large {
+  grid-row: span 2; /* Ocupa dos filas */
+}
+
+.wide {
+  grid-column: span 2; /* Ocupa dos columnas */
+}
+
+.image {
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa toda la altura del contenedor */
+  border-radius: 8px; /* Esquinas redondeadas opcional */
+}

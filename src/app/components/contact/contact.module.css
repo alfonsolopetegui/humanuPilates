@@ -1,0 +1,96 @@
+.contactContainer {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E01A4F;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  /* border-top-left-radius: 15%; */
+  /* border-top-right-radius: 15%; */
+}
+
+.titleContainer {
+    color: white;
+    width: 80%;
+    text-align: right;
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .rectangle {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+  
+.downDiv {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactLeft {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactLeft h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:antiquewhite
+}
+
+.fieldContainer {
+    margin-bottom: 25px;
+}
+
+.fieldContainer input {
+    background: none;
+    width: 500px;
+    font-size: 30px;
+    margin-bottom: 10px white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    line-height: 50px;
+    color: white;
+}
+
+.fieldContainer input::placeholder {
+    color: white;
+}
+
+
+.contactForm textarea {
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    min-height: 120px;
+    width: 500px;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+    background: none;
+    color: white;
+}
+
+.contactForm textarea::placeholder {
+    color: white;
+}
+
+.btnContainer {
+    margin-top: 30px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactRight {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+}

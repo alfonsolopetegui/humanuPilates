@@ -1,0 +1,47 @@
+.downArrowContainer {
+  width: 70px;
+  height: 70px;
+  padding: 15px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  background: white; /* or your desired background color */
+  transition: all 0.3s ease;
+}
+
+.downArrowContainer::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50%;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  z-index: -1;
+  opacity: 0;
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+}
+
+.downArrowContainer:hover::before {
+  animation: spin .5s linear infinite;
+  opacity: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
