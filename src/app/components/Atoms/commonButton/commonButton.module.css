@@ -1,19 +1,20 @@
 .commonButtonContainer {
-    border-radius: 40px;
-    font-size: 30px;
-    color: rgba(245, 245, 245, 0.626);
+    border-radius: 50px;
+    /* font-size: 20px; */
+    color: #EEF5DB;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #483b4165;
+    background-color: none;
+    border: solid 1px #EEF5DB;
     /* border: solid 3px var(--terciary); */
     transition: all 0.6s ease;
     cursor: pointer;
 }
 
 .commonButtonContainer h3 {
-    font-size: 30px;
+    font-size: 20px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -21,7 +22,9 @@
 }
 
 .commonButtonContainer:hover {
-    background-color: #5c4b55a5;
+    background-color: #96caef6b;
+
+    color: white;
     box-shadow: rgba(202, 202, 216, 0.2) 0px 7px 29px 0px;
     /* border: solid 3px var(--terciary); */
 }

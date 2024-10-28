@@ -1,4 +1,5 @@
 import "./globals.css";
+import "../../public/dist/hamburgers.css";
 import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
 import { inter } from "./utils/googleFonts";

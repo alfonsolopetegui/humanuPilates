@@ -23,6 +23,7 @@
   overflow: hidden; /* Asegura que la imagen no desborde */
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 8px;
 }
 
 .titleContainer {
@@ -51,4 +52,10 @@
   width: 100%; /* Ocupa todo el ancho del contenedor */
   height: 100%; /* Ocupa toda la altura del contenedor */
   border-radius: 8px; /* Esquinas redondeadas opcional */
+}
+
+@media (max-width: 850px) {
+  .galleryItemsContainer {
+    grid-template-columns: 1fr;
+  }
 }

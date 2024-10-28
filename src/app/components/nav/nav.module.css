@@ -82,3 +82,20 @@
 .navRight a:hover:before {
   width: 100%;
 }
+.hamburguerContainer {
+  display:none;
+}
+
+@media (max-width: 850px) {
+  .navRight {
+    display: none;
+  }
+
+  .logoContainer {
+    width: 140px;
+  }
+
+  .hamburguerContainer {
+    display: block;
+  }
+}

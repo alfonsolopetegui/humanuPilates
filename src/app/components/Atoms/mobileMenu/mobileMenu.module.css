@@ -1,0 +1,26 @@
+.mobileMenuContainer {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    /* visibility: hidden; */
+    transition: all .5s ease;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.84);
+}
+
+.mobileMenuContainer a {
+    font-size: 25px;
+}
+
+.isActive {
+    /* visibility: visible; */
+    left:0;
+    top: 0;
+}

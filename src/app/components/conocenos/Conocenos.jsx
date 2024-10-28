@@ -16,7 +16,11 @@ const Conocenos = () => {
           </div>
         </div>
         <div className={styles.textContainer}>
-          {/* <h1>Hola, soy Manu</h1> */}
+          <h1>Hola, soy Manu</h1>
+          <p>Aca va la información de Manu</p>
+          <p>Aca va la información de Manu</p>
+          <p>Aca va la información de Manu</p>
+          <p>Aca va la información de Manu</p>
         </div>
       </div>
     </div>

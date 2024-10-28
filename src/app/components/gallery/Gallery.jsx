@@ -12,13 +12,13 @@ const Gallery = () => {
       </div>
       <div className={styles.galleryItemsContainer}>
         <div className={`${styles.item} ${styles.large}`}>
-          <Image src="/pila1.jpg" fill className={styles.image} />
+          <Image src="/estudio3.jpg" fill className={styles.image} />
         </div>
         <div className={styles.item}>
-          <Image src="/pila2.jpg" fill className={styles.image} />
+          <Image src="/estudio2.jpg" fill className={styles.image} />
         </div>
         <div className={`${styles.item} ${styles.large}`}>
-          <Image src="/pila3.jpg" fill className={styles.image} />
+          <Image src="/estudio4.jpg" fill className={styles.image} />
         </div>
         <div className={`${styles.item} ${styles.large}`}>
           <Image src="/pila4.jpg" fill className={styles.image} />
@@ -27,7 +27,7 @@ const Gallery = () => {
           <Image src="/pila5.jpg" fill className={styles.image} />
         </div>
         <div className={styles.item}>
-          <Image src="/pila7.jpg" fill className={styles.image} />
+          <Image src="/estudio5.jpg" fill className={styles.image} />
         </div>
       </div>
     </div>

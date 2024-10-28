@@ -102,3 +102,14 @@
     opacity: 1; /* Muestra la descripción al hacer hover */
     height: auto; /* Permite el espacio necesario */
 }
+
+@media (max-width: 850px) {
+
+    .classesContainer {
+        height: fit-content;
+    }
+    .articlesContainer {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
