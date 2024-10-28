@@ -67,6 +67,8 @@
   .topDiv {
     flex-direction: column;
     height: fit-content;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
 
   .footerLogo {
@@ -83,5 +85,9 @@
 
   .footerContactanos {
     width: 100%;
+  }
+
+  .bottomDiv h3 {
+    font-size: 14px;
   }
 }

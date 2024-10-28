@@ -100,6 +100,28 @@
   }
 
   .downDiv {
+    width: 100%;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .fieldContainer input {
+    width: 100%;
+  }
+
+  .contactForm textarea {
+    width: 100%;
+  }
+
+  .contactLeft {
+    width: 100%;
+  }
+
+  .contactRight {
+    width: 90%;
+  }
+
+  .btnContainer {
+    margin-bottom: 20px;
   }
 }

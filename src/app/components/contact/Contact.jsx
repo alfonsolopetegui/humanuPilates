@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className={styles.contactContainer} id="contact">
       <div className={styles.titleContainer}>
-        <h1 className={lato.className}>Contactá con nosotros</h1>
+        <h1 className={lato.className}>Contactanos</h1>
         <div className={styles.rectangle}></div>
       </div>
       <div className={styles.downDiv}>

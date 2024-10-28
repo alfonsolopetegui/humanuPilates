@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
       <div className={styles.bottomDiv}>
         <h3>
-          Desarrollado por alfonsolopetegui.com - Todos los derechos reservados
+          Desarrollado por www.alfonsolopetegui.com
         </h3>
       </div>
     </div>
