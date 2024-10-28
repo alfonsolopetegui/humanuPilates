@@ -18,7 +18,7 @@ const Footer = () => {
     <div className={`${styles.footerContainer} ${lato.className}`}>
       <div className={styles.topDiv}>
         <div className={styles.footerLogo}>
-          <Image src={"/logoHumanuBlanco.png"} fill />
+          <Image src={"/logoHumanuBlanco.png"} fill alt={""}/>
         </div>
         <div className={styles.media}>
           <FontAwesomeIcon icon={faSquareFacebook} className="fa-fw" />

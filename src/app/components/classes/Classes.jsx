@@ -12,7 +12,7 @@ const Classes = () => {
       </div>
       <div className={`${styles.articlesContainer} ${lato.className}`}>
         <article className={styles.cardContainer}>
-          <Image src={"/pila3.jpg"} fill />
+          <Image src={"/pila3.jpg"} fill alt={""}/>
           <div className={styles.textContainer}>
             <h3>Pilates MAT</h3>
             <p>
@@ -24,7 +24,7 @@ const Classes = () => {
           <div className={styles.cardOpacity}></div>
         </article>
         <article className={styles.cardContainer}>
-          <Image src={"/pila4.jpg"} fill />
+          <Image src={"/pila4.jpg"} fill alt={""}/>
           <div className={styles.textContainer}>
             <h3>Stretching</h3>
             <p>
@@ -35,7 +35,7 @@ const Classes = () => {
           <div className={styles.cardOpacity}></div>
         </article>
         <article className={styles.cardContainer}>
-          <Image src={"/pila8.jpg"} fill />
+          <Image src={"/pila8.jpg"} fill alt={""}/>
           <div className={styles.textContainer}>
             <h3>Pilates Reformer</h3>
             <p>

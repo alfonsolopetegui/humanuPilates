@@ -4,13 +4,12 @@ import styles from "./nav.module.css";
 
 import { lato } from "@/app/utils/googleFonts";
 import { useEffect, useState } from "react";
-
 import Image from "next/image";
 import HamburgerButton from "../Atoms/hamburguer/Hamburguer";
 import MobileMenu from "../Atoms/mobileMenu/MobileMenu";
 
 const Nav = () => {
-  const [scrolling, setScrolling] = useState(window.scrollY > 100);
+  const [scrolling, setScrolling] = useState(false); // Inicializa como false
   const [isActive, setIsActive] = useState(false);
 
   const handleScroll = () => {
@@ -18,7 +17,14 @@ const Nav = () => {
   };
 
   useEffect(() => {
+    // Verifica si el objeto window está disponible
+    const handleInitialScroll = () => {
+      setScrolling(window.scrollY > 100);
+    };
+
     window.addEventListener("scroll", handleScroll);
+    handleInitialScroll(); // Llama a la función para establecer el valor inicial
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -32,7 +38,7 @@ const Nav = () => {
     <div className={scrolling ? styles.navScrolled : styles.navContainer}>
       <div className={styles.navLeft}>
         <div className={styles.logoContainer}>
-          <Image src={"/logoHumanuBlanco.png"} fill />
+          <Image src={"/logoHumanuBlanco.png"} fill priority alt={""}/>
         </div>
       </div>
       <div className={`${styles.navRight} ${lato.className}`}>
@@ -40,13 +46,12 @@ const Nav = () => {
         <Link href={"#us"}>Conocenos</Link>
         <Link href={"#study"}>Estudio</Link>
         <Link href={"#contact"}>Contacto</Link>
-        <Link href={""}>Area clientes</Link>
+        <Link href={""}>Área clientes</Link>
       </div>
       <div className={styles.hamburguerContainer}>
         <HamburgerButton
           onToggle={toggleMenu}
           isActive={isActive}
-          // buttonRef={buttonRef}
         />
       </div>
       <MobileMenu isActive={isActive} handler={toggleMenu}/>

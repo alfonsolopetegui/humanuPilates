@@ -12,7 +12,7 @@ const Conocenos = () => {
       <div className={styles.articleContainer}>
         <div className={styles.imageWrapper}>
           <div className={styles.imageContainer}>
-            <Image src="/profePilates2.png" fill />
+            <Image src="/profePilates2.png" fill alt={""}/>
           </div>
         </div>
         <div className={styles.textContainer}>

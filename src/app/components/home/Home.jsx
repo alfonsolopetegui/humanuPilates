@@ -2,7 +2,7 @@
 import styles from "./home.module.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { birth, lato, pinyon, satisfy, smooch } from "@/app/utils/googleFonts";
+import { birth, lato} from "@/app/utils/googleFonts";
 import CommonButton from "../Atoms/commonButton/CommonButton";
 import Link from "next/link";
 
@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.homeImageContainer}>
-        <Image src={"/estudio1.jpg"} fill />
+        <Image src={"/estudio1.jpg"} fill alt={""}/>
       </div>
 
       {/* opacity */}
