@@ -22,7 +22,7 @@ const Conocenos = () => {
           </p>
           <p>
             <FontAwesomeIcon icon={faAnglesRight} className="fa-fw" />
-            Soy profesor de Educación física recibido en ISEF N2 "Dickens"
+            {`Soy profesor de Educación física recibido en ISEF N2 "Dickens"`}
           </p>
           <p>
             <FontAwesomeIcon icon={faAnglesRight} className="fa-fw" />
