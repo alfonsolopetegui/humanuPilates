@@ -3,10 +3,6 @@ import { lato } from "@/app/utils/googleFonts";
 import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSquareFacebook,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
 const Conocenos = () => {
@@ -17,7 +13,7 @@ const Conocenos = () => {
         <div className={styles.rectangle}></div>
       </div>
       <div className={styles.articleContainer}>
-        <div className={`${styles.textContainer} "${lato.className}`}>
+        <div className={`${styles.textContainer} ${lato.className}`}>
           <h1>Hola, soy Manu</h1>
 
           <p>
@@ -44,7 +40,6 @@ const Conocenos = () => {
         <div className={styles.imageWrapper}>
           <div className={styles.imageContainer}>
             <Image src="/conocenos.jpg" width={500} height={500} alt={""} />
-            {/* <div className={styles.designForm}></div> */}
           </div>
         </div>
       </div>
