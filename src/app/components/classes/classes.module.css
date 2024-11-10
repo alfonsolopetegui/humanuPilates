@@ -29,14 +29,16 @@
 
 .articlesContainer {
     width: 80%;
-    display: flex;
-    justify-content: space-between; /* Centra las tarjetas horizontalmente */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; 
     align-items: center;
+    gap: 20px;
 
 }
 .cardContainer {
     cursor: pointer;
-    width: 350px; /* Tamaño máximo */
+    width: 100%; /* Tamaño máximo */
     height: 450px;
     border-radius: 10px;
     position: relative;
@@ -103,13 +105,24 @@
     height: auto; /* Permite el espacio necesario */
 }
 
+@media (max-width: 1250px) {
+    .cardContainer {
+        
+        height: 300px;
+    }
+}
+
 @media (max-width: 850px) {
 
     .classesContainer {
         height: fit-content;
     }
     .articlesContainer {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 25px;
+    }
+
+    .cardContainer {
+        height: 400px;
     }
 }

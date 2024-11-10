@@ -10,8 +10,7 @@ const Home = () => {
   const [fadeInH1, setFadeInH1] = useState(false);
   const [fadeInH2, setFadeInH2] = useState(false);
   const [fadeInH3, setFadeInH3] = useState(false);
-  const [fadeInH4, setFadeInH4] = useState(false);
-  const [fadeInH5, setFadeInH5] = useState(false);
+ 
 
   useEffect(() => {
     const timer1 = setTimeout(() => {
@@ -26,20 +25,13 @@ const Home = () => {
       setFadeInH3(true);
     }, 1500);
 
-    const timer4 = setTimeout(() => {
-      setFadeInH4(true);
-    }, 2000);
-
-    const timer5 = setTimeout(() => {
-      setFadeInH5(true);
-    }, 2500);
+   
 
     return () => {
       clearTimeout(timer1);
       clearTimeout(timer2);
       clearTimeout(timer3);
-      clearTimeout(timer4);
-      clearTimeout(timer5);
+   
     };
   }, []);
 
@@ -57,11 +49,11 @@ const Home = () => {
         <h2 className={fadeInH2 ? styles.fadeIn : ""}>para tu bienestar</h2>
       </div> */}
       <div className={`${styles.titleContainer} ${lato.className}`}>
-        <h1 className={`${fadeInH3 ? styles.fadeIn : ""} ${birth.className}`}>Humanu</h1>
-        <h2 className={fadeInH4 ? styles.fadeIn : ""}>estudio pilates</h2>
+        <h1 className={`${fadeInH1 ? styles.fadeIn : ""} ${birth.className}`}>Humanu</h1>
+        <h2 className={fadeInH2 ? styles.fadeIn : ""}>estudio pilates</h2>
         <div
           className={
-            fadeInH5
+            fadeInH3
               ? `${styles.fadeIn} ${styles.btnContainer}`
               : styles.btnContainer
           }

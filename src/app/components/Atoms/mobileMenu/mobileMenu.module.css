@@ -17,6 +17,10 @@
 
 .mobileMenuContainer a {
     font-size: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.304);
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .isActive {

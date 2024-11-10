@@ -48,6 +48,14 @@
   gap: 30px;
 }
 
+.media a {
+  transition: all ease 0.3s;
+}
+
+.media a:hover {
+  color: #db2955;
+}
+
 .footerContactanos {
   display: flex;
   flex-direction: column;

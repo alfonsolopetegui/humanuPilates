@@ -11,8 +11,20 @@ const Classes = () => {
         <div className={styles.rectangle}></div>
       </div>
       <div className={`${styles.articlesContainer} ${lato.className}`}>
+       
         <article className={styles.cardContainer}>
-          <Image src={"/pila3.jpg"} fill alt={""}/>
+          <Image src={"/stretching.jpg"} fill alt={""}/>
+          <div className={styles.textContainer}>
+            <h3>Stretching</h3>
+            <p>
+              Técnica de fuerza que consiste en estirar los músculos, tendones y
+              ligamentos. La primera finalidad es la de mejorar la flexibilidad.{" "}
+            </p>
+          </div>
+          <div className={styles.cardOpacity}></div>
+        </article>
+        <article className={styles.cardContainer}>
+          <Image src={"/pila5.jpg"} fill alt={""}/>
           <div className={styles.textContainer}>
             <h3>Pilates MAT</h3>
             <p>
@@ -24,18 +36,7 @@ const Classes = () => {
           <div className={styles.cardOpacity}></div>
         </article>
         <article className={styles.cardContainer}>
-          <Image src={"/pila4.jpg"} fill alt={""}/>
-          <div className={styles.textContainer}>
-            <h3>Stretching</h3>
-            <p>
-              Técnica de fuerza que consiste en estirar los músculos, tendones y
-              ligamentos. La primera finalidad es la de mejorar la flexibilidad.{" "}
-            </p>
-          </div>
-          <div className={styles.cardOpacity}></div>
-        </article>
-        <article className={styles.cardContainer}>
-          <Image src={"/pila8.jpg"} fill alt={""}/>
+          <Image src={"/reformer.jpg"} fill alt={""}/>
           <div className={styles.textContainer}>
             <h3>Pilates Reformer</h3>
             <p>

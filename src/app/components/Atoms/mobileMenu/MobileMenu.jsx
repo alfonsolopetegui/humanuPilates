@@ -11,7 +11,7 @@ const MobileMenu = ({isActive, handler}) => {
       <Link href={"#us"}>Conocenos</Link>
       <Link href={"#study"}>Estudio</Link>
       <Link href={"#contact"}>Contacto</Link>
-      <Link href={""}>Area clientes</Link>
+      
     </div>
   );
 };

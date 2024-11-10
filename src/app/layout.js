@@ -4,13 +4,30 @@ import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
 import { inter } from "./utils/googleFonts";
 
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 export const metadata = {
   title: "Humanu Pilates",
   description: "Tu estudio de pilates en Caballito",
+  keywords: [
+    "pilates",
+    "stretching",
+    "salud",
+    "caballito",
+    "buenos aires",
+    "caba",
+    "estiramiento",
+    "respiración",
+    "estado físico",
+    "prevención",
+    "alineación",
+    "postura",
+    "dolor de espalda",
+    "adelgazar",
+    "cuidado de la salud",
+  ],
 };
 
 export default function RootLayout({ children }) {

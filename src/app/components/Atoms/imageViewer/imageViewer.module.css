@@ -1,0 +1,40 @@
+.viewerContainer {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.817);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+}
+
+.imageContainer {
+  position: relative;
+  width: 90vw;   /* Ancho del 90% del viewport */
+  height: 90vh;  /* Altura del 90% del viewport */
+  overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;   /* La imagen ocupa el 100% del contenedor */
+  height: 100%;  /* La imagen ocupa el 100% del contenedor */
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio manteniendo la proporción */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 600px) {
+  .imageContainer {
+    width: 90vw;  /* El ancho seguirá siendo del 90% del viewport */
+    height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
+  }
+
+  .closeButton {
+    font-size: 14px; /* Reducir tamaño del botón en pantallas pequeñas */
+  }
+}
+

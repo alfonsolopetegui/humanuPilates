@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: none;
+    background: none;
     border: solid 1px #EEF5DB;
     /* border: solid 3px var(--terciary); */
     transition: all 0.6s ease;
@@ -22,9 +22,9 @@
 }
 
 .commonButtonContainer:hover {
-    background-color: #96caef6b;
+    background-color: white;
 
-    color: white;
-    box-shadow: rgba(202, 202, 216, 0.2) 0px 7px 29px 0px;
+    color: #db2955;
+    box-shadow: rgba(202, 202, 216, 0.486) 0px 7px 29px 0px;
     /* border: solid 3px var(--terciary); */
 }

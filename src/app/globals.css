@@ -5,6 +5,8 @@
   --primaryOpacity: #5956577a;
   --secondary: #90d4fb;
   --terciary: #007EA7;
+
+  --toastify-toast-width: 270px;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -38,7 +38,9 @@ const Nav = () => {
     <div className={scrolling ? styles.navScrolled : styles.navContainer}>
       <div className={styles.navLeft}>
         <div className={styles.logoContainer}>
-          <Image src={"/logoHumanuBlanco.png"} fill priority alt={""}/>
+          <Link href={"/"}>
+            <Image src={"/logoHumanuBlanco.png"} fill priority alt={""} />
+          </Link>
         </div>
       </div>
       <div className={`${styles.navRight} ${lato.className}`}>
@@ -46,15 +48,11 @@ const Nav = () => {
         <Link href={"#us"}>Conocenos</Link>
         <Link href={"#study"}>Estudio</Link>
         <Link href={"#contact"}>Contacto</Link>
-        <Link href={""}>Área clientes</Link>
       </div>
       <div className={styles.hamburguerContainer}>
-        <HamburgerButton
-          onToggle={toggleMenu}
-          isActive={isActive}
-        />
+        <HamburgerButton onToggle={toggleMenu} isActive={isActive} />
       </div>
-      <MobileMenu isActive={isActive} handler={toggleMenu}/>
+      <MobileMenu isActive={isActive} handler={toggleMenu} />
     </div>
   );
 };

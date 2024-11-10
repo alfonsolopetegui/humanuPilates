@@ -14,7 +14,7 @@
   height: 15%;
   text-align: left;
   padding-top: 50px;
-  margin-bottom: 30px;
+  /* margin-bottom: 10px; */
 }
 
 .titleContainer h1 {
@@ -29,70 +29,153 @@
 }
 
 .articleContainer {
-  width: 100%;
-  height: 85%;
+  width: 80%;
+  height: fit-content;
   display: flex;
-
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  /* position: relative; */
 }
 
 .imageWrapper {
   width: 50%;
-  height: 100%;
-  position: relative;
+  height: fit-content;
+  /* position: relative; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .imageContainer {
+  border-radius: 10px;
   position: relative;
-  position: absolute;
-  bottom: 0;
-  left: 120px;
-  width: 500px;
-  height: 670px;
+  width: 90%;
+  height: auto;
+  z-index: 1;
 }
 
 .imageContainer img {
+  border-radius: 10px;
+  z-index: 2;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  position: relative;
 }
+
+.designForm {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -15px;
+  bottom: -15px;
+  background-color: #db2955;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+
 
 .textContainer {
   width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   color: white;
+  border-left: #db2955ad solid 1px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-bottom: 20px;
 }
 
 .textContainer h1 {
+  width: 95%;
+  background-color: #db2955;
   color: white;
+  border-radius: 10px 10px 10px 0;
+  padding: 5px 30px;
+}
+
+.textContainer p {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  padding-right: 40px;
+  font-weight: 600;
+}
+
+@media (max-width: 1250px) {
+  .conocenosContainer {
+    height: 70vh;
+  }
+  .textContainer p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 850px) {
   .conocenosContainer {
     height: fit-content;
+    padding-bottom: 20px;
   }
 
   .articleContainer {
     height: fit-content;
     flex-direction: column-reverse;
+    gap: 25px;
+    margin-top: 20px;
   }
 
   .imageWrapper {
-    height: 450px;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
   }
 
   .imageContainer {
-    left: 30px;
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    /* min-height: 200px; */
+    border-radius: 10px;
+    position: relative; /* Esto permite el uso de z-index */
+    z-index: 1; /* Ajustado para estar encima del .designForm */
   }
+  
+  .imageContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* Cambia a cover si necesitas que la imagen cubra todo */
+    border-radius: 10px;
+    z-index: 2; /* Asegúrate de que la imagen esté encima del contenedor */
+    position:relative; /* Asegúrate de que el z-index funcione */
+  }
+  
+  .designForm {
+    position: absolute;
+   width: 100%;
+   height: 100%;
+    left: -5px;
+    bottom: -5px;
+    background-color: #db2955;
+    border-radius: 10px;
+    z-index: 0; /* Debería estar debajo de la imagen */
+  }
+  
 
   .textContainer {
     width: 100%;
+    height: 350px;
+    margin-bottom: 30px;
+  }
+
+  .textContainer h1 {
+    font-size: 20px;
+  }
+
+  .textContainer p {
+    font-size: 1rem;
   }
 }
