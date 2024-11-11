@@ -12,6 +12,13 @@ export const metadata = {
   title: "Humanu Pilates",
   description: "Tu estudio de pilates en Caballito",
   keywords: [
+    "humanu pilates",
+    "humanu",
+    "relax",
+    "reacondicionamiento",
+    "entrenamiento",
+    "humanu",
+    "manu",
     "pilates",
     "stretching",
     "salud",
