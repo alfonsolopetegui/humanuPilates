@@ -10,7 +10,7 @@ config.autoAddCss = false;
 
 export const metadata = {
   title: "Humanu Pilates",
-  description: "Tu estudio de pilates en Caballito",
+  description: "Humanu Pilates es un centro de acondicionamiento físico. Trabajamos con reformer, circuito y MAT, combinando pilates clásico y contemporáneo. Nos encontramos en pleno Caballito",
   keywords: [
     "humanu pilates",
     "humanu",
