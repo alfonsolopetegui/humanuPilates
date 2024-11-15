@@ -3,6 +3,7 @@ import "../../public/dist/hamburgers.css";
 import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
 import { inter } from "./utils/googleFonts";
+import Head from "next/head";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -10,7 +11,8 @@ config.autoAddCss = false;
 
 export const metadata = {
   title: "Humanu Pilates",
-  description: "Humanu Pilates es un centro de acondicionamiento físico. Trabajamos con reformer, circuito y MAT, combinando pilates clásico y contemporáneo. Nos encontramos en pleno Caballito",
+  description:
+    "Humanu Pilates es un centro de acondicionamiento físico. Trabajamos con reformer, circuito y MAT, combinando pilates clásico y contemporáneo. Nos encontramos en pleno Caballito",
   keywords: [
     "humanu pilates",
     "humanu",
@@ -40,6 +42,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords.join(", ")} />
+      </Head>
       <body className={inter.className}>
         <Nav />
         {children}
