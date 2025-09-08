@@ -18,7 +18,7 @@ import Link from "next/link";
 const Footer = () => {
 
   //WhatsApp
-  const phoneNumber = "5491159828015"; // Cambia esto por tu número de WhatsApp
+  const phoneNumber = "5491151353248"; // Cambia esto por tu número de WhatsApp
   const message = "Hola, quiero más información sobre Pilates!"; // Mensaje predefinido
 
   return (
@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
             <div className={styles.lineContainer}>
               <FontAwesomeIcon icon={faPhone} className="fa-fw" />
-              <h3>11- 4213 2345 / 5982 8015</h3>
+              <h3>11- 5135 3248</h3>
             </div>
           </div>
         </div>
