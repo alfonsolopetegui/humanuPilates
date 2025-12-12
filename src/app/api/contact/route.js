@@ -1,33 +1,32 @@
-// /app/api/contact/route.js
-import nodemailer from 'nodemailer';
+export const runtime = 'nodejs';
+
+console.log("LA RUTA CONTACT SE ESTÁ CARGANDO");
+
+import { Resend } from 'resend';
 
 export async function POST(req) {
   const { nombre, email, mensaje } = await req.json();
 
-  // Configura el transporte de nodemailer
-  const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com', // Cambia esto por tu SMTP
-    port: 587,
-    secure: false, // true para puerto 465, false para otros puertos
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASSWORD,
-    },
-  });
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
-  const mailOptions = {
-    from: email,
-    to: process.env.EMAIL_USER, // Destinatario
-    subject: `Hola Humanu! Tenés un nuevo mensaje de ${nombre}`,
-    text: mensaje,
-    html: `<p>${mensaje}</p>`,
-  };
+  console.log('API KEY:', process.env.RESEND_API_KEY);
 
   try {
-    await transporter.sendMail(mailOptions);
-    return new Response(JSON.stringify({ message: 'Mensaje enviado' }), { status: 200 });
+    await resend.emails.send({
+      from: 'Consulta Web <onboarding@humanupilates.com>',
+      to: process.env.EMAIL_USER,
+      reply_to: email,
+      subject: `Hola Humanu! Tenés un nuevo mensaje de ${nombre}`,
+      html: `<p>${mensaje}</p>`,
+    });
+
+    return new Response(JSON.stringify({ message: 'Mensaje enviado' }), {
+      status: 200,
+    });
   } catch (error) {
     console.error(error);
-    return new Response(JSON.stringify({ error: 'Error al enviar el mensaje' }), { status: 500 });
+    return new Response(JSON.stringify({ error: 'Error al enviar el mensaje' }), {
+      status: 500,
+    });
   }
 }
