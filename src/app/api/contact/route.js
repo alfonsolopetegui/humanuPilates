@@ -9,15 +9,20 @@ export async function POST(req) {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
 
-  console.log('API KEY:', process.env.RESEND_API_KEY);
+  
 
   try {
     await resend.emails.send({
       from: 'Consulta Web <onboarding@humanupilates.com>',
       to: process.env.EMAIL_USER,
       reply_to: email,
-      subject: `Hola Humanu! Tenés un nuevo mensaje de ${nombre}`,
-      html: `<p>${mensaje}</p>`,
+      subject: `Nuevo mensaje web de ${nombre} (${email})`,
+      html: `
+        <p><strong>Nombre:</strong> ${nombre}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <hr />
+        <p>${mensaje}</p>
+      `,
     });
 
     return new Response(JSON.stringify({ message: 'Mensaje enviado' }), {
